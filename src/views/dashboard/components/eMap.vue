@@ -8,10 +8,9 @@
  <template>
      <div ref="cont_pro_map" style="height:550px;"></div>
  </template>
- 
  <script>
-    import initEcharts  from '../../../utils/initEchart';
-    import { getArea }  from '../../../api/dashboard';
+    import initEcharts  from '../../../utils/initEchart'
+    import { getArea }  from '../../../api/dashboard'
     import areaData from '../../../utils/area'
     export default {
         data() {
@@ -108,12 +107,12 @@
                                 },
                                 itemStyle: { 
                                     normal: {  //地图样式
-                                        areaColor: '#fff',
-                                        borderColor: '#f4b02d',
+                                        areaColor: 'rgb(14,47,94)',
+                                        borderColor: 'rgb(14,73,118)',
                                         borderWidth: 1
                                     },
                                     emphasis: { //地图选中时样式
-                                        areaColor: '#f4b02d'
+                                        areaColor: 'rgb(3,166,201)'
                                     },
                                 },
                                 roam: false,
@@ -140,8 +139,8 @@
                                     },
                                     itemStyle: { 
                                     normal: {  //地图样式
-                                        areaColor: '#fff',
-                                        borderColor: '#f4b02d',
+                                        areaColor: 'rgb(14,47,94)',
+                                        borderColor: 'rgb(14,47,94)',
                                         borderWidth: 1
                                     },
                                     emphasis: { //地图选中时样式
@@ -208,4 +207,5 @@
         }
     }
  </script>
+
  

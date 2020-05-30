@@ -1,7 +1,7 @@
 <template>
+ 
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
-    <e-map></e-map>
+   <e-map></e-map>
   </div>
 </template>
 
@@ -21,14 +21,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.dashboard {
-  &-container {
-    margin: 30px;
-  }
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
-  }
+<style lang="scss" >
+body{
+  background-color: rgb(2, 14, 35) ;
+  overflow: hidden ;
+}
+.dashboard-container{
+  background: url("../../assets/img/bg-01.png") no-repeat;
+  width: 6144px;
+  height: 3072px;
+  transform: scale(0.301758) translate(82.8479px, 0px);
+  transform-origin: left top;
 }
 </style>
