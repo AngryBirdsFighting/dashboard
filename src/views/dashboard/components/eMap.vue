@@ -1,23 +1,14 @@
-<!--
- * @Author: qiaozp
- * @Date: 2019-05-16 11:33:20
- * @LastEditors: qiaozp
- * @LastEditTime: 2019-05-21 17:05:14
- * @Description: 贵阳市地图
- -->
+
  <template>
-     <div ref="cont_pro_map" style="height:550px;"></div>
+     <div class="echars-line" ref="cont_pro_map" ></div>
  </template>
  <script>
     import initEcharts  from '../../../utils/initEchart'
-    import { getArea }  from '../../../api/dashboard'
     import areaData from '../../../utils/area'
     export default {
         data() {
             return {
                 myChart: null,
-                eWidth: '100px',
-                eHeight: '100px',
             };
         },
         props: ['mapData'],
@@ -107,12 +98,12 @@
                                 },
                                 itemStyle: { 
                                     normal: {  //地图样式
-                                        areaColor: 'rgb(14,47,94)',
-                                        borderColor: 'rgb(14,73,118)',
+                                        areaColor: '#0d3162',
+                                        borderColor: '#097293',
                                         borderWidth: 1
                                     },
                                     emphasis: { //地图选中时样式
-                                        areaColor: 'rgb(3,166,201)'
+                                        areaColor: '#03a6c8'
                                     },
                                 },
                                 roam: false,
@@ -207,5 +198,13 @@
         }
     }
  </script>
+ <style rel="stylesheet/scss" lang="scss" scoped>
+.echars-line {
+  width: 100%;
+  height: 96%;
+  margin: 0;
+  padding: 0;
+}
+</style>
 
  
