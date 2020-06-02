@@ -4,7 +4,7 @@
      <div class="dashboard-header">
     </div>
     <div class="dashboard-container">
-      <div class="left-box hi">
+      <div class="left-box">
         <div class="left-top">
           <div class="left-top-header">
             <div class="left-title title">
@@ -103,7 +103,7 @@
              <e-bar :data="bar1Data"></e-bar>
           </div>
         </div>
-        <e-map></e-map>
+        <e-map class=""></e-map>
       </div>
       <div class="right-box"></div>
     </div>
