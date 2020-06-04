@@ -1,8 +1,19 @@
 <template>
     <div class="dashboard">
-        <div class="dashboard-header"></div>
+        <div class="dashboard-header">
+            <div class="header-left">
+                <div class="select1">
+                    医学考试
+                </div>
+                <div class="select2">
+                    药学（中医药学）综合知识与技能
+                </div>
+            </div>
+            <div class="header-middle"></div>
+            <div class="header-right"></div>
+        </div>
         <div class="dashboard-container">
-            <div class="left-box">
+            <div class="left-box hi">
                 <div class="left-top">
                     <div class="left-top-header">
                         <div class="left-title title">考试基本信息</div>
@@ -69,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="middle-box">
+            <div class="middle-box hi">
                 <div class="middle-schedule">
                     <div class="schedule-title">上报进度</div>
                     <div class="schedule-list">
@@ -130,7 +141,7 @@
                   <div class="quekao"></div>
                 </div>
             </div>
-            <div class="right-box">
+            <div class="right-box hi">
                 <div class="right-top">
                     <div class="right-top-header">
                         <div class="right-title title">郑州市考务情况</div>
@@ -164,13 +175,13 @@
                             </div>
                         </div>
                         <div class="content2">
-                            <div class="echarts-contet-title" style="width:500px;">各考点参考率统计</div>
+                            <div class="echarts-contet-title right-content-title" style="width:500px;">各考点参考率统计</div>
                             <div class="bar2">
                                 <e-bar :data="bar2Data"></e-bar>
                             </div>
                         </div>
                         <div class="content2" style="margin-top:100px;">
-                            <div class="echarts-contet-title" style="width:500px;">各考点参考率统计</div>
+                            <div class="echarts-contet-title right-content-title" style="width:500px;">各考点参考率统计</div>
                             <div class="bar2">
                                 <e-bar :data="bar3Data"></e-bar>
                             </div>
@@ -319,6 +330,9 @@ body {
         background: url("../../assets/img/content-title-bg.png") no-repeat;
         background-size: 100%;
     }
+    .right-content-title{
+        background: url("../../assets/img/right-title.png") no-repeat;
+    }
     .hi {
         visibility: hidden;
     }
@@ -332,6 +346,31 @@ body {
     }
     .dashboard-header {
         height: 200px;
+        display: flex;
+        div{
+            border: 1px solid red;
+        }
+        .header-left{
+            height: 100%;
+            width: 1700px;
+            display: flex;
+            font-size: 60px;
+            justify-content: space-around;
+            .select1{
+                margin-top: 55px;
+                width: 551px;
+                height: 90px;
+                line-height: 90px;
+                background: url("../../assets/img/select1.png") no-repeat;
+            }
+            .select2{
+                margin-top: 55px;
+                width: 1000px;
+                height: 90px;
+                line-height: 90px;
+                background: url("../../assets/img/select2.png") no-repeat;
+            }
+        }
     }
     .dashboard-container {
         height: 2832px;
