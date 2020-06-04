@@ -348,7 +348,6 @@ body {
         height: 200px;
         display: flex;
         div{
-            border: 1px solid red;
         }
         .header-left{
             height: 100%;
@@ -357,14 +356,16 @@ body {
             font-size: 60px;
             justify-content: space-around;
             .select1{
-                margin-top: 55px;
+                margin-top: 65px;
+                padding-left: 10px;
                 width: 551px;
                 height: 90px;
                 line-height: 90px;
                 background: url("../../assets/img/select1.png") no-repeat;
             }
             .select2{
-                margin-top: 55px;
+                margin-top: 65px;
+                padding-left: 10px;
                 width: 1000px;
                 height: 90px;
                 line-height: 90px;
